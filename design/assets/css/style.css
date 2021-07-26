@@ -13381,7 +13381,7 @@ header .navbar-nav .nav-link.active:before {
 }
 
 .navbar-brand .navbar-brand-item {
-  height: 30px;
+  height: 50px;
   display: block;
   width: auto;
 }
