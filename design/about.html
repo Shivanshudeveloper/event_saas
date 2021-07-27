@@ -23,7 +23,34 @@
 
 	<!-- Theme CSS -->
 	<link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	<style>
+		.img-about{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: stretch;
+			 margin-top: 50px;
+		}
+		.img-about img{
+			width: 30vw;
+		}
+		.img-about img:not(:last-child){
+			margin-right: 50px;
+		}
+		
+		@media (max-width: 750px){
+			.img-about{
+				flex-direction: column;
+				align-items: center;
+			}
+			.img-about img:not(:last-child){
+			margin-right: 0;
+			
+		}
+			.img-about img{
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -77,8 +104,8 @@ Header START -->
 						<a class="nav-link" href="faq.html">FAQ</a>
 					</li>
 
-          <li class="nav-item">
-						<a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1aEzT4_-NQ81ulg2LNQXto-S-R8q-2H44/edit">Resources</a>
+          			<li class="nav-item">
+						<a class="nav-link" href="resources.html">Resources</a>
 					</li>
 
                     <div class="nav flex-nowrap align-items-center">
@@ -141,10 +168,10 @@ About START -->
         <div class="responsive-handler fr-view breakable ">Welcome to Sydney Events Things To Do. Here you will find a variety of events located in Sydney, Australia. You can find events according to your interests. Have a look at the website to see the latest events in Sydney. If you’re an event organiser, feel free to fill in the submit your event form, to have your event advertised. Sydney Events Things To Do is the website where event-goers and event organisers find their perfect match. We showcase events of any type, small and large, and for all ages.<br><br>Events such as:<br><br><ul><li>Music and Performances</li><li>Fetes</li><li>Fundraising</li><li>Tours</li><li>Sports</li><li>Product Launch</li><li>Markets</li><li>Expos and Exhibitions</li><li>Workshops and Webinars</li><li>Networking</li><li>Food and Drink</li></ul><br>Advertise your event with us to:<br><br><ul><li>Take advantage of competitive, affordable rates.</li><li>Benefit from a range of packages to suit the size, scope and budget of your event.</li><li>Drive traffic to your website and social media channels.</li><li>Increase customer reach beyond your own channels.</li><li>Discover a website that enjoys promoting Sydney’s small and quirky events as much as large and established ones.</li></ul><br>So we’ve got your attention – now what?<br><br>Choose your best fit from a range of eight, easy-to-understand pricing subscription packages giving you exposure across our website and social media channels.<br><br></div>
       </div>  <!-- Col END -->
 	  
-	  <div style="display: flex;justify-content: space-around;align-items: stretch; margin-top: 50px;">
-		  <img style="width: 30vw;" src="https://static1.s123-cdn-static-a.com/uploads/3900738/800_5f0d51b8ea49f.jpg" alt="group image">
-		  <img style="width: 30vw;" src="https://static1.s123-cdn-static-a.com/uploads/3900738/800_5f0d51e628473.jpg" alt="group image">
-		  <img style="width: 30vw;" src="https://static1.s123-cdn-static-a.com/uploads/3900738/800_5f0d51ed2eb6e.jpg" alt="group image">
+	  <div class="img-about">
+		  <img style="" src="https://static1.s123-cdn-static-a.com/uploads/3900738/800_5f0d51b8ea49f.jpg" alt="group image">
+		  <img style="" src="https://static1.s123-cdn-static-a.com/uploads/3900738/800_5f0d51e628473.jpg" alt="group image">
+		  <img style="" src="https://static1.s123-cdn-static-a.com/uploads/3900738/800_5f0d51ed2eb6e.jpg" alt="group image">
 	  </div>
 	</div>
   </div>
