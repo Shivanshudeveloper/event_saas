@@ -16,9 +16,9 @@ import TrafficByDevice from 'src/components/dashboard//TrafficByDevice';
 const Dashboard = () => (
   <>
     <Helmet>
-      <title>Dashboard | Material Kit</title>
+    <title>Event</title>
     </Helmet>
-    <Box
+    {/* <Box
       sx={{
         backgroundColor: 'background.default',
         minHeight: '100%',
@@ -104,7 +104,7 @@ const Dashboard = () => (
           </Grid>
         </Grid>
       </Container>
-    </Box>
+    </Box> */}
   </>
 );
 

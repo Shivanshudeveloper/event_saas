@@ -6,7 +6,7 @@ import SettingsPassword from 'src/components/settings/SettingsPassword';
 const SettingsView = () => (
   <>
     <Helmet>
-      <title>Settings | Material Kit</title>
+    <title>Event</title>
     </Helmet>
     <Box
       sx={{
@@ -16,7 +16,7 @@ const SettingsView = () => (
       }}
     >
       <Container maxWidth="lg">
-        <SettingsNotifications />
+        {/* <SettingsNotifications /> */}
         <Box sx={{ pt: 3 }}>
           <SettingsPassword />
         </Box>

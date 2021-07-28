@@ -11,15 +11,18 @@ const useStyles = makeStyles(() => createStyles({
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
       height: '100%',
-      width: '100%'
+      width: '100%',
+
     },
     body: {
       backgroundColor: '#f4f6f8',
       height: '100%',
-      width: '100%'
+      width: '100%',
+      fontFamily: ['Roboto','sans-serif']
+
     },
     a: {
-      textDecoration: 'none'
+      textDecoration: 'none',
     },
     '#root': {
       height: '100%',

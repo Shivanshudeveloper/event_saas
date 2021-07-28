@@ -34,7 +34,9 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
               color="primary"
               variant="dot"
             >
+              <RouterLink to ="/app/notification">
               <NotificationsIcon />
+              </RouterLink>
             </Badge>
           </IconButton>
           <IconButton color="inherit">

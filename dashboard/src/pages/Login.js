@@ -20,7 +20,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>Login | Material Kit</title>
+      <title>Event</title>
       </Helmet>
       <Box
         sx={{
