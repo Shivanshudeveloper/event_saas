@@ -354,6 +354,8 @@ const FreeListingForm = (props ) => {
                 helperText="Please Enter Description about the business"
                 label="Description"
                 name="description"
+                multiline
+                rows={3}
                 onChange={handleChange}
                 required
                 value={values.description}
