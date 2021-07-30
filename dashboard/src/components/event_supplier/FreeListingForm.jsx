@@ -466,21 +466,6 @@ const FreeListingForm = (props ) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={12}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Capacity Range"
-                name="capacity"
-                onChange={handleChange}
-                required
-                value={values.capacity}
-                variant="outlined"
-              />
-            </Grid>
             </Grid>
         </CardContent>
         <Divider />
