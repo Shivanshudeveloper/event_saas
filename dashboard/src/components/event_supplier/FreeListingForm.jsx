@@ -5,12 +5,9 @@ import {
     Card,
     CardContent,
     CardHeader,
-    Checkbox,
     Divider,
-    FormControlLabel,
     TextField,
     Grid,
-    Typography
   } from '@material-ui/core';
   const venueType = [
 
@@ -484,137 +481,7 @@ const FreeListingForm = (props ) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Select event Type"
-                name="eventType"
-                onChange={handleChange}
-                required
-                select
-                SelectProps={{ native: true }}
-                value={values.eventType}
-                variant="outlined"
-              >
-                {EventType.map((option) => (
-                  <option
-                    key={option.value}
-                    value={option.value}
-                  >
-                    {option.label}
-                  </option>
-                ))}
-              </TextField>
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Select Venue Type"
-                name="venueType"
-                onChange={handleChange}
-                required
-                select
-                SelectProps={{ native: true }}
-                value={values.venueType}
-                variant="outlined"
-              >
-                {venueType.map((option) => (
-                  <option
-                    key={option.value}
-                    value={option.value}
-                  >
-                    {option.label}
-                  </option>
-                ))}
-              </TextField>
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Select Venue Style"
-                name="venueStyle"
-                onChange={handleChange}
-                required
-                select
-                SelectProps={{ native: true }}
-                value={values.venueStyle}
-                variant="outlined"
-              >
-                {venueStyle.map((option) => (
-                  <option
-                    key={option.value}
-                    value={option.value}
-                  >
-                    {option.label}
-                  </option>
-                ))}
-              </TextField>
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Select Feature"
-                name="feature"
-                onChange={handleChange}
-                required
-                select
-                SelectProps={{ native: true }}
-                value={values.feature}
-                variant="outlined"
-              >
-                {Features.map((option) => (
-                  <option
-                    key={option.value}
-                    value={option.value}
-                  >
-                    {option.label}
-                  </option>
-                ))}
-              </TextField>
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Select Catering Option"
-                name="catering"
-                onChange={handleChange}
-                required
-                select
-                SelectProps={{ native: true }}
-                value={values.catering}
-                variant="outlined"
-              >
-                {Catering.map((option) => (
-                  <option
-                    key={option.value}
-                    value={option.value}
-                  >
-                    {option.label}
-                  </option>
-                ))}
-              </TextField>
-            </Grid>
-          </Grid>
         </CardContent>
         <Divider />
         <Box
