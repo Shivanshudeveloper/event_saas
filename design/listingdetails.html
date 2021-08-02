@@ -20,6 +20,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 	<!-- Theme CSS -->
 	<link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -209,9 +212,9 @@ Main START -->
 
 				<!-- Comments END -->
 				<!-- Reply START -->
-				<div class="mt-2">
-					<h3>Buy Ticket</h3>
-					<small>Your email address will not be published. Required fields are marked *</small>
+				<div class="mt-4">
+					<!-- <h3>Buy Ticket</h3> -->
+					<!-- <small>Your email address will not be published. Required fields are marked *</small>
 					<form class="row g-3 mt-2">
 					  <div class="col-md-6">
 					    <label class="form-label">Name *</label>
@@ -229,13 +232,55 @@ Main START -->
 					  <div class="col-md-6">
 					    <label class="form-label">Address *</label>
 					    <input type="email" class="form-control">
-					  </div>
+					  </div> -->
 					  
-					  
-					  <div class="col-12">
-					    <button type="submit" class="btn btn-primary">Buy</button>
-					  </div>
-					</form>
+						<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#exampleModalCenter">
+	Buy Ticket
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Enter Details</h5>
+		  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button> -->
+		</div>
+		<div class="modal-body">
+			<form class="row g-3 mt-2">
+				<div class="col-md-6">
+				  <label class="form-label">Name *</label>
+				  <input type="text" class="form-control" aria-label="First name">
+				</div>
+				<div class="col-md-6">
+				  <label class="form-label">Email *</label>
+				  <input type="email" class="form-control">
+				</div>
+
+				<div class="col-md-6">
+				  <label class="form-label">Phone *</label>
+				  <input type="text" class="form-control" >
+				</div>
+				<div class="col-md-6">
+				  <label class="form-label">Address *</label>
+				  <input type="email" class="form-control">
+				</div> 
+				<div class="col-md-6">
+				  <label class="form-label">Quantity *</label>
+				  <input type="number" min="0" class="form-control">
+				</div>  
+				</form>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger-soft" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary-soft">Proceed</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 				</div>
 				<!-- Reply END -->
 			</div>
@@ -338,16 +383,18 @@ Footer START -->
 			<div class="col-sm-6 col-lg-3 mb-4">
 				<h5 class="mb-4">Browse by Tag</h5>
 				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
 					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Marketing</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Food And Drink</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Health</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Music</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Auto</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Boat And Air</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Charity And Causes</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Community</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Family And Education</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Fashion</a></li>
+
+
 				</ul>
 			</div>
 

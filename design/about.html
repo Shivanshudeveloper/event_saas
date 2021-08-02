@@ -20,10 +20,16 @@
 	<!-- Plugins CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<!-- Theme CSS -->
 	<link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<style>
+	<script src="jquery-3.5.1.min.js"></script>
+<style>
 		.img-about{
 			display: flex;
 			justify-content: space-evenly;
@@ -138,7 +144,7 @@ Inner intro START -->
 	<div class="container">
 		<div class="row">
       <div class="col-12">
-        <div class="card bg-dark-overlay-4 overflow-hidden card-bg-scale h-400 text-center" style="background-image:url(assets/images/blog/16by9/09.jpg); background-position: center left; background-size: cover;">
+        <div class="card bg-dark-overlay-4 overflow-hidden card-bg-scale h-400 text-center" style="background-image:url(assets/images/blog/16by9/about.jpg); background-position: center left; background-size: cover;">
           <!-- Card Image overlay -->
           <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4"> 
             <div class="w-100 my-auto">
@@ -197,18 +203,29 @@ About START -->
 		</ul><br>So we’ve got your attention – now what?<br><br>Choose your best fit from a range of eight, easy-to-understand pricing subscription packages giving you exposure across our website and social media channels.<br><br></div>
       </div>  <!-- Col END -->
 
-	  <div class="row">
-		<div class="col-md">
-			<img class="img img-fluid w-100" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1627618170/events/16_gcwabk.jpg" alt="group image">
-		</div>
-		<div class="col-md">
-			<img class="img img-fluid w-100 mt-5" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1627618170/events/83516453_10219762862794869_8572929339006386176_o_ohjet2.jpg" alt="group image">
-		</div>
-		<div class="col-md">
-			<img class="img img-fluid w-100" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1627618170/events/37_sseuib.jpg" alt="group image">
-		</div>
+	  <div class="w-50 mx-auto">
+		<div id="carouselExampleControls" class="tow carousel slide" data-ride="carousel" data-interval="10000">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img class="d-block w-100" style="height: 400px;" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1627618170/events/16_gcwabk.jpg" alt="First slide">
+			  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" style="height: 400px;" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1627618170/events/83516453_10219762862794869_8572929339006386176_o_ohjet2.jpg" alt="Second slide">
+			  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" style="height: 400px;" src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1627618170/events/37_sseuib.jpg" alt="Third slide">
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
 	  </div>
-
 	  
 	</div>
   </div>
@@ -263,16 +280,18 @@ Footer START -->
 			<div class="col-sm-6 col-lg-3 mb-4">
 				<h5 class="mb-4">Browse by Tag</h5>
 				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
 					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Marketing</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Food And Drink</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Health</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Music</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Auto</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Boat And Air</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Charity And Causes</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Community</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Family And Education</a></li>
+<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Fashion</a></li>
+
+
 				</ul>
 			</div>
 
@@ -304,6 +323,7 @@ JS libraries, plugins and custom scripts -->
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
+
 
 </body>
 
